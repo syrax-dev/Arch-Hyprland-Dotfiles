@@ -1,0 +1,188 @@
+/* Catppuccin Mocha Theme Colors */
+@import "./colors/catppucin.css";
+
+* {
+  border: none;
+  border-radius: 0px;
+
+  font-family:
+    "Adwaita Sans", "JetBrainsMono Nerd Font Propo", "Font Awesome 6 Free",
+    sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  /* background-color: rgba(15, 15, 20, 1); */
+  background: transparent;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* LEFT SIDE - Arch Logo (1st pill) */
+#idle_inhibitor {
+  background-color: @base;
+  padding: 1px 15px;
+  margin: 2px 0 0 15px;
+  border-radius: 18px;
+  min-width: 35px;
+  color: @mauve;
+  font-size: 25px;
+}
+
+/* LEFT SIDE - Workspaces (2nd pill) */
+#workspaces {
+  background-color: @base;
+  padding: 5px 3px;
+  margin: 2px 0 0 12px;
+  border-radius: 18px;
+  /* border: 1px solid @crust; */
+  color: @mauve;
+}
+
+#workspaces button {
+  padding: 0px 6px;
+  margin: 0px 3px;
+  border-radius: 50px;
+  color: @crust;
+  min-width: 25px;
+  background-color: @mauve;
+  /* Smooth elastic bounce */
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+#workspaces button.active {
+  background-color: @base;
+  color: @mauve;
+  min-width: 55px;
+  border: 1.5px solid @mauve;
+  font-size: 13px;
+  /* Extra smooth spring effect */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#workspaces button:hover {
+  background-color: rgba(146, 110, 255, 0.85);
+  color: @crust;
+  border-radius: 16px;
+  min-width: 50px;
+  background-size: 400% 400%;
+  /* Quick but smooth response */
+  /* transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+}
+
+#workspaces button.urgent {
+  background-color: @surface1;
+  color: @mauve;
+  border-radius: 16px;
+  min-width: 50px;
+  background-size: 400% 400%;
+  /* Smooth urgent pulse */
+  transition: all 0.5s cubic-bezier(0.68, -0.8, 0.265, 1.8);
+}
+
+#workspaces button:not(.active):not(.urgent) {
+  background-color: rgba(139, 92, 246, 0.3);
+  /* background-color: rgba(94, 61, 192, 0.95) */
+  color: rgba(94, 61, 192, 0.01);
+  min-width: 25px;
+  padding: 0px 6px;
+  margin: 0px 3px;
+}
+
+/* LEFT SIDE - Media Player (3rd pill) */
+#mpris {
+  color: @mauve;
+  background-color: @base;
+  padding: 5px 10px;
+  margin: 2px 0 0 6px;
+  border-radius: 18px;
+  font-size: 14px;
+}
+
+/* CENTER - Clock */
+#clock {
+  color: @mauve;
+  background-color: @base;
+  padding: 1px 8px;
+  min-width: 78px;
+  margin: 2px 0 0 0;
+  border-radius: 18px;
+  font-size: 13.5px;
+}
+
+
+
+/* RIGHT SIDE */
+#tray,
+#pulseaudio,
+#custom-network-speed
+{
+  color: @mauve;
+  background-color: @base;
+  padding: 0px 14px;
+  margin: 2px 1px 0 6px;
+  border-radius: 18px;
+  min-width: 20px;
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+
+#custom-controller {
+  color: @mauve;
+  background-color: @base;
+  padding: 0px 14px;
+  margin: 2px 1px 0 6px;
+  border-radius: 18px;
+  min-width: 20px;
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+/* #custom-brightness {
+  color: @mauve;
+  background-color: @base;
+  padding: 0px 14px;
+  margin: 2px 1px 0 10px;
+  border-radius: 18px;
+  min-width: 20px;
+  font-size: 13.5px;
+  font-weight: bold;
+} */
+
+#custom-notification {
+  color: @mauve;
+  background-color: @base;
+  padding: 1px 10px;
+  margin: 2px 14px 0 6px;
+  border-radius: 18px;
+  min-width: 38px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* #custom-power {
+  color: @mauve;
+  background-color: @base;
+  padding: 1px 10px;
+  margin: 2px 14px 0 8px;
+  border-radius: 18px;
+  min-width: 25px;
+  font-size: 16px;
+} */
+
+/* Tooltips */
+tooltip {
+  background-color: @crust;
+  border: 2px solid @lavender;
+  border-radius: 12px;
+}
+
+tooltip label {
+  color: @text;
+  padding: 6px;
+}

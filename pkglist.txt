@@ -1,0 +1,114 @@
+# Core package list for the Hyprland setup.
+# AUR helpers (yay/paru) resolve official + AUR packages transparently.
+# For a full system reproduction, also install pkglist-full.txt (./install.sh --full)
+
+## Window manager & session
+hyprland
+hypridle
+hyprlock
+hyprpaper
+uwsm
+xdg-desktop-portal-hyprland
+egl-wayland
+sddm
+sddm-silent-theme
+
+## Bar / launcher / notifications / OSD
+waybar
+rofi
+rofi-emoji
+swaync
+swayosd
+
+## Terminal & editing
+kitty
+kate
+fastfetch
+
+## Screenshots / wallpaper
+grim
+slurp
+swappy
+swww
+imagemagick
+mpv
+mpvpaper
+
+## Clipboard
+cliphist
+wl-clipboard
+
+## Audio
+pipewire
+pipewire-pulse
+wireplumber
+pavucontrol
+playerctl
+
+## Network
+networkmanager
+network-manager-applet
+blueman
+bluez-utils
+
+## Authentication / keyring
+polkit-gnome
+polkit-kde-agent
+gnome-keyring
+
+## Theming (GTK / Qt / cursors / icons)
+gtk3
+gtk4
+qt5ct
+qt6ct
+qt5-wayland
+qt6-wayland
+kvantum
+jq
+bibata-cursor-theme-bin
+catppuccin-gtk-theme-mocha
+dracula-icons-git
+
+## Fonts
+ttf-jetbrains-mono-nerd
+ttf-firacode-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
+otf-font-awesome
+ttf-roboto
+ttf-ubuntu-font-family
+ttf-ms-fonts
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+cantarell-fonts
+adobe-source-code-pro-fonts
+apple-fonts
+terminus-font
+
+## Apps referenced by keybindings / autostart
+zen-browser-bin
+brave-bin
+firefox
+discord
+spotify
+spicetify-cli
+thunar
+thunar-archive-plugin
+thunar-volman
+tumbler
+nwg-look
+openrgb
+cava
+gnome-calculator
+obsidian
+
+## System utilities used by the configs
+zsh
+git
+rsync
+eza
+htop
+nvtop
+brightnessctl
+cliphist

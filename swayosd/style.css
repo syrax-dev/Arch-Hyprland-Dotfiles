@@ -1,0 +1,36 @@
+window {
+    background: rgba(24, 24, 37, 0.92);
+    border-radius: 999px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+progressbar {
+    min-width: 150px;
+}
+
+trough {
+    min-height: 8px;
+    background: rgba(205, 214, 244, 0.12);
+    border-radius: 999px;
+}
+
+progress {
+    min-height: 8px;
+    background: #8B5CF6;
+    border-radius: 999px;
+}
+
+image {
+    color: #8B5CF6;
+    -gtk-icon-size: 6px;
+    margin-left: 8px;
+}
+
+label {
+    color: #cdd6f4;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 2px;
+}

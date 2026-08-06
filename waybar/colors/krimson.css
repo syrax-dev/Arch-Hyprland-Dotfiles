@@ -1,0 +1,25 @@
+/* ───── Hanako — Pixel Perfect ───── */
+
+/* ── Backgrounds ── */
+@define-color base       #1a1014;   /* bar bg — exact from your screenshot */
+@define-color mantle     #120b0e;   /* slightly deeper */
+@define-color crust      #0a0608;   /* darkest layer */
+
+/* ── Text ── */
+@define-color text       #f0e6d8;   /* warm ivory */
+@define-color sub        #c4a8b0;   /* muted rose-grey */
+
+/* ── The 3 real colors in your bar ── */
+@define-color mauve      #8c3a5a;   /* pill/module bg — exact #8c3a5a */
+@define-color red        #d8092b;   /* wallpaper crimson — exact #d8092b */
+@define-color surface    #6e2f47;   /* pill border/shadow — exact #6e2f47 */
+
+/* ── Supporting palette ── */
+@define-color teal       #14a0b4;   /* hair ribbon cyan */
+@define-color gold       #c8961e;   /* jewelry gold */
+@define-color pink       #c87890;   /* blush */
+@define-color peach      #d4906a;   /* skin warmth */
+@define-color lavender   #a06898;   /* soft shadow */
+@define-color blue       #3a6eb8;   /* eye reflection */
+@define-color green      #7a9648;   /* kimono olive */
+@define-color white_acc  #f0ece8;   /* white flower */
