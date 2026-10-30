@@ -7,7 +7,6 @@ hyprland
 hypridle
 hyprlock
 hyprpaper
-uwsm
 xdg-desktop-portal-hyprland
 egl-wayland
 sddm

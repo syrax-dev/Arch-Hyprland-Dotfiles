@@ -1,0 +1,15 @@
+-- Main Hyprland configuration (Lua)
+-- Sourcing modular configurations
+
+require("modules.env")
+require("modules.monitors")
+require("modules.general")
+require("modules.decorations")
+require("modules.animations")
+require("modules.input")
+require("modules.layouts")
+require("modules.misc")
+require("modules.workspaces")
+require("modules.windowrules")
+require("modules.keybindings")
+require("modules.autostart")

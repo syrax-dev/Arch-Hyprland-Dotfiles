@@ -1,0 +1,20 @@
+-- Layout-specific settings
+
+hl.config({
+    dwindle = {
+        preserve_split = true,
+        smart_split = false,
+        smart_resizing = true,
+        force_split = 0,
+        special_scale_factor = 0.8,
+    },
+    master = {
+        new_status = "master",
+        new_on_top = false,
+        orientation = "left",
+        smart_resizing = true,
+        drop_at_cursor = true,
+        mfact = 0.55,
+        special_scale_factor = 0.8,
+    }
+})

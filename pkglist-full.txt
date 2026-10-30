@@ -17,7 +17,6 @@ calf
 cantarell-fonts
 catppuccin-gtk-theme-mocha
 cava
-clamav
 claude-desktop
 cliphist
 cloudflared
@@ -63,14 +62,10 @@ linux-lts-headers
 localwp
 loupe
 lsp-plugins
-mariadb
 mate-polkit
 mda.lv2
 microsoft-edge-stable-bin
 mission-center
-mongodb-bin
-mongodb-compass-bin
-mongosh-bin
 mpvpaper
 mysql-workbench
 nano

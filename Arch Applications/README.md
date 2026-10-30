@@ -8,7 +8,6 @@ A categorized list of all 164 explicitly installed packages on this Arch system.
 - `hypridle` — Idle management daemon
 - `hyprlock` — Lock screen
 - `hyprpaper` — Wallpaper daemon
-- `uwsm` — Universal Wayland Session Manager
 - `sddm` — Display manager
 - `sddm-silent-theme` — SDDM theme
 - `xdg-desktop-portal-hyprland` — XDG portal for Hyprland

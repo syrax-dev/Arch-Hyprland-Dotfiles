@@ -6,7 +6,7 @@ My personal Hyprland desktop configuration for Arch Linux. Modular, themeable, a
 
 | Component | Description |
 |-----------|-------------|
-| **Hyprland** | Modular config split into `colors/` and `modules/` (monitors, keybinds, autostart, etc.) |
+| **Hyprland** | Modular config in Lua split into `colors/` and `modules/` (monitors, keybinds, autostart, etc.) |
 | **Waybar** | Status bar with custom scripts (network speed, controller battery, brightness) |
 | **Rofi** | App launcher, emoji picker, power menu, clipboard history |
 | **Kitty** | Terminal with JetBrains Mono Nerd Font and Catppuccin theming |
@@ -53,12 +53,12 @@ The installer will install `yay` automatically if neither is present.
 ├── pkglist.txt         # Core packages for the Hyprland setup
 ├── pkglist-full.txt    # All explicit packages from the source system
 │
-├── hypr/               # Hyprland config (modular)
-│   ├── hyprland.conf   # Main entry point (sources all modules)
+├── hypr/               # Hyprland config (modular Lua)
+│   ├── hyprland.lua    # Main entry point (loads modules via require)
 │   ├── hypridle.conf   # Idle daemon config
 │   ├── hyprlock.conf   # Lock screen config
-│   ├── colors/         # Color schemes (catppuccin.conf)
-│   └── modules/        # Split configs (keybinds, autostart, etc.)
+│   ├── colors/         # Color palettes (*.lua)
+│   └── modules/        # Split configs (*.lua: keybinds, autostart, etc.)
 │
 ├── waybar/             # Status bar
 │   ├── config.jsonc    # Bar modules
@@ -137,16 +137,14 @@ These are referenced by the autostart config but not installed by the script:
 
 | App | Install |
 |-----|---------|
-| ActivityWatch | Download from [activitywatch.net](https://activitywatch.net/), unpack to `/opt/activitywatch` |
-| OmniRoute | Install the `omniroute` binary to your PATH |
 | Dropbox | `yay -S dropbox` and sign in |
 
 ## Post-Install Checklist
 
-- [ ] Start Hyprland: `uwsm start hyprland` (or select in SDDM)
+- [ ] Start Hyprland: `hyprland` (or select in SDDM)
 - [ ] Add wallpapers to `~/Pictures/Wallpapers/`
 - [ ] Sign into Spotify (if using) — Spicetify themes apply automatically
-- [ ] Configure monitors: edit `~/.config/hypr/modules/monitors.conf`
+- [ ] Configure monitors: edit `~/.config/hypr/modules/monitors.lua`
 
 ## Troubleshooting
 

@@ -188,12 +188,10 @@ echo -e "${C_CYAN}━━━━━━━━━━━━━━━━━━━━�
 echo -e "${C_GREEN}✓ Installation complete!${C_RESET}"
 echo
 echo "Next steps:"
-echo "  1. Start the session:  login to a TTY and run  uwsm start hyprland"
+echo "  1. Start the session:  login to a TTY and run  hyprland"
 echo "     (or select Hyprland in your display manager)"
 echo "  2. Set a wallpaper:     drop images in ~/Pictures/Wallpapers, press SUPER+W"
 echo
 echo "Manual / optional extras (not installed by this script):"
-echo "  - ActivityWatch:  unpack to /opt/activitywatch (autostart expects it)"
-echo "  - OmniRoute:      install the omniroute binary (autostart runs it)"
 echo "  - Dropbox:        install + sign in (autostart runs it)"
 echo "  - Spicetify:      themes are installed via 'spicetify marketplace'"
